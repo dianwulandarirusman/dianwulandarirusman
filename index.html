@@ -1,124 +1,372 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
    <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width,       initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie-edge">
+      <meta charset="utf-8">
+      <title> Universitas Digital Creative Indonesia</title>
+      <link rel="shortcut icon" href="images/UDCIbrand.png" >
+      <link rel="stylesheet" href="style.css" media="screen" >
+      <link rel="stylesheet" href="master.css" media="screen" >
+      <style media="screen">
+         *{
+            margin: 0;
+            padding: 0;
+         }
+         img{
+            max-width: 100%;
+            max-height: 100%;
+         }
 
-      <!-- Start Menu-->
+         html, body{
+             background-color: white;
+         }
 
-      <title>Pemeriksaan Format Penulisan Online</title>
-      <meta name="description" content="Pemeriksaan Format Penulisan Laporan docx Online">
+         .clear{
+            clear: both;
+         }
 
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-
-          <!-- End Menu-->
+      </style>
    </head>
-
    <body>
-   <!--Logo Sistem-->
-      <a href="index.html" title="Logo Sistem">
-         <img src="images/logo.png" alt="Logo Sistem" style="width:300px;height:150px;">
-      </a>
-   <!--Logo Sistem-->
 
-   <!--Menu Sistem Primer-->
+      <header>
+         <img src="images/brand.png" alt="brand univ" title="universitas digital creative" />
 
-      <ul>
-         <li><a href="index.html" title="Beranda">Beranda</li></a>
-         <li><a href="tatacara.html" title="Tata Cara Penggunaan">Tata Cara Penggunaan</li></a>
-         <li><a href="tentang.html" title="Tentang Kami">Tentang Kami</li></a>
-         <li><a href="kontak.html" title="Kontak">Kontak Kami</li></a>
-      </ul>
+         <input type="search" name="cari" placeholder="cari .. " id="cariNav">
 
-      <!--End Menu Primer-->
+         <nav>
+            <ul>
+               <li class="liNav">
+                   <a href="#">Home</a>
+               </li>
+                 <li class="liNav">
+                   <a href="#">Kampus</a>
+                   <div class="drop">
+                   	    <a href="#" class="drpConten">Sambutan Rektor</a>
+                   	    <a href="#" class="drpConten">Sejarah</a>
+                   	    <a href="#" class="drpConten">Visi dan Misi</a>
+                   	    <a href="#" class="drpConten">Struktur Organisasi</a>
+                   	    <a href="#" class="drpConten">Lambang</a>
+                   	    <a href="#" class="drpConten">Hymne dan Mars</a>
+                   </div>
+               </li>
+                <li class="liNav">
+                   <a href="#">Akademik</a>
+                   <div class="drop">
+                   	   <a href="#" class="drpConten">Program Sarjana</a>
+                   	   <a href="#" class="drpConten">Program Pascasarjana</a>
+                   	   <a href="#" class="drpConten">Program Profesi</a>
+                   	   <a href="#" class="drpConten">Program Diploma</a>
+                   	   <a href="#" class="drpConten">Program Internasional</a>
+                   	   <a href="#" class="drpConten">E-Learning</a>
+                   	   <a href="#" class="drpConten">Kalender Akademik</a>
+                   </div>
+                </li>
+                <li class="linav">
+                   <a href="#">Fakultas</a>
+                   <div class="drop">
+                   	   <a href="#" class="drpConten">Dakwah Dan Komunikasi</a>
+                   	   <a href="#" class="drpConten">Tarbiyah Dan Keguruan</a>
+                   	   <a href="#" class="drpConten">Psikologi</a>
+                   	   <a href="#" class="drpConten">Pertanian dan Peternakan</a>
+                   	   <a href="#" class="drpConten">Sains dan Teknologi</a>
+                   	   <a href="#" class="drpConten">Syariah dan Hukum</a>
+                   	   <a href="#" class="drpConten">Ekonomi dan Ilmu Sosial</a>
+                   	   <a href="#" class="drpConten">Unshuluddin</a>
+                   	   <a href="#" class="drpConten">Pascasarjana</a>
+                   </div>
+                </li>
+               <li class="liNav">
+                   <a href="#">Mahasiswa</a>
+                   <div class="drop">
+                   	   <a href="#" class="drpConten">Aturan Akademik</a>
+                   	   <a href="#" class="drpConten">Ekstrakurikuler</a>
+                   	   <a href="#" class="drpConten">Prestasi Mahasiswa</a>
+                   	   <a href="#" class="drpConten">Fasilitas dan Layanan</a>
+                   	   <a href="#" class="drpConten">Daftar Beasiswa</a>
+                   	   <a href="#" class="drpConten">International Students</a>
+                   </div>
+               </li>
+               <li class="linav">
+               	   <a href="#">Sistem Informasi</a>
+               	   <div class="drop">
+               	   	   <a href="#" class="drpConten">Pendaftaran Mhs Baru</a>
+               	   	   <a href="#" class="drpConten">Registrasi Online</a>
+               	   	   <a href="#" class="drpConten">Kepegawaian</a>
+               	   	   <a href="#" class="drpConten">Staff Site</a>
+               	   	   <a href="#" class="drpConten">E-Journal</a>
+               	   	   <a href="#" class="drpConten">KKN Online</a>
+               	   </div>
+               </li>
+               <li class="liNav">
+                   <a href="#">Penelitian dan Inovasi</a>
+               </li>
+            </ul>
+         </nav>
 
-   <!--Start Jumbotron-->
-      <h1>Selamat Datang di Sistem Pemeriksaan Format Penulisan Dokumen Word Online</h1>
-      <h3>Sistem Pemeriksaan Format Penulisan Dokumen Word Online adalah sistem yang memeriksa kesalahan-kesalahan yang tidak sesuai dengan format penulisan yang ada pada word yang dapat kita periksa secara seksama secara online</h3>         
+      </header>
 
-   <!--End Jumbotron-->
+      <section id="main">
 
-   <!-- Promo-->
-      <h4>Promo</h4>
-      <ul>
-         <li>[Bulan Ini] Dapatkan Domain dan Hosting Gratis</li>
-         <li>[tahun Ini] Dapatkan Gratis 10 Web Conten untuk Paket Web Lengkap</li>
-      </ul>
+          <section class="container">
 
-   <!-- Promo-->
+            <div class="slideShow">
 
-   <!-- Layanan-->
-      <h4>Layanan</h4>
-      <ul>
-         <li> <a href="Layanan.html" title="Layanan"></a> Logo Design</li>
-         <li><a href="webdesign.html" title="Layanan"></a>Web Design</li>
-      </ul>
+                <figure class="show">
+                    <img src="images/doraemon.jpg" alt="img slideshow" class="imgShow"/>
+                </figure>
 
-    <!-- Layanan-->
-
-       <!-- Artikel-->
-      <h4>Artikel</h4>
-      <ol>
-         <li>
-            <a href="artikel.html" title="artikel"> Cara Mudah Memeriksa Format Penulisan Dokumen Word</a>
-         </li>
-         <li>
-            <a href="artikel1.html" title="artikel1">Tools yang dibutuhkan untuk Pemeriksaan Format Penulisan Dokumen Word</a>
-         </li>
-      </ol>
-
-    <!-- Artikel-->
-
-    <!-- Testi-->
-      <h4>Testimonial</h4>
-      <blockquote></blockquote>
-      <p>Berikut Testimonial dan Contoh Hasil Pemeriksaan Format Penulisan Dokumen Word</p>
-      </blockquote>
-
-    <!-- Testi-->
-
-   <!--Start Sekunder-->
-
-      <h4>Pemeriksaan Format Penulisan Dokumen Word Online</h4>
-      <p>Sistem Pemeriksaan Format Penulisan Dokumen Word Online Memberikan Kemudahan untuk Pengguna yang Ingin Memeriksa Kesalahan Penulisan Dokumennya Secara Online, Gratis dan Berkualitas</p>
-      <p>Email: <a href="mailto:dhyanwulandari@gmail.com" title="dhyanwulandari@gmail.com"></a>dhyanwulandari@gmail.com"</p>
-      <p>Telepon : <a href="tel:+62-852-647-946-60" title="+62-852-647-946-60"></a>+62-852-647-946-60</p>
-
-
-   <!--End Sekunder-->
-
-   <!-- Media Sosial-->
-       <ul>
-         <li> 
-            <a href="https://facebook.com/dhyan" title="Facebook-Logo">
-               <img src="images/logofb.png" width="50px">Facebook -Dian Wulandari Rusman</li>
-         <li> 
-            <a href="https://instagram.com/dianwulandari97 title="Instagram-Logo">
-               <img src="images/instagram.png" width="50px">Instagram-@dianwulandari97</li>
-         <li> 
-            <a href="https://twitter.com/dian_wulandr" title="twitter-Logo">
-               <img src="images/logotwitter.jpg" width="50px">Twitter-@dian_wulandr</li>       
-         </ul>
-   <!-- Media Sosial-->
-
-   <!-- WhatsHelp.io widget -->
-<script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+6285264794660", // WhatsApp number
-            call_to_action: "Message us", // Call to action
-            position: "right", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-<!-- /WhatsHelp.io widget -->
+            </div>
 
 
-   <p>Copyright &copy 2019 : Dian Wulandari Rusman</p>
+              <article>
+                  <h1 style="font-size:26px;color:black;
+                  font-weight:lighter">Berita</h1>
+
+
+                  <div class="bxArticle">
+                    <img src="images/Otik.jpg" alt="berita UIN" class="imgBerita" />
+
+                    <div class="berita">
+                        <h1><a href="#">OTIK 8 FASTE Untuk Gairahkan Semangat Teknologi Riau</a></h1>
+                        <p>
+                            Robot mangat-mangat, buah karya tim Trias Fornos SMK 2 Pekanbaru ini baru saja melewati tantangan yang diberikan oleh juri. Ia berhasil membawa beban dengan mengikuti jalur dan melewati rintangan yang diberikan.
+                        </p>
+                    </div>
+                  </div>
+                  <div class="bxArticle">
+                    <img src="images/lagi.jpg" alt="berita UIN" class="imgBerita" />
+
+                    <div class="berita">
+                        <h1><a href="#">UIN Suska Riau Raih Rangking 33 </a></h1>
+                        <p>
+                            uin-suska.ac.id – Tahun ini UIN SUSKA Riau berhasil menempati Rangking 33 Repositori Webometric. Dimana berdasarkan rilis yang dikeluarkan bulan juli 2016 ini, untuk tingkat dunia berhasil menduduki peringkat 1376.
+                        </p>
+                    </div>
+                  </div>
+                  <div class="bxArticle">
+                      <img src="images/article.jpg" alt="berita UIN" class="imgBerita" />
+
+                      <div class="berita">
+                          <h1><a href="#">mencari anak Hiu</a></h1>
+                          <p>
+                              uin-suska.ac.id – Setelah berhasil meningkatkan status dari STAIN (Sekolah Tinggi Agama Islam Negeri) menjadi IAIN (Institut Agama Islam Negeri) tahun 2015 lalu,
+                              Tim liputan Suska News (Donny, Azmi, PTIPD)
+                          </p>
+                      </div>
+                  </div>
+                  <div class="bxArticle">
+                      <img src="images/angular.PNG" alt="berita UIN" class="imgBerita" />
+
+                      <div class="berita">
+                          <h1><a href="#">mencari anak Hiu</a></h1>
+                          <p>
+                              uin-suska.ac.id – Setelah berhasil meningkatkan status dari STAIN (Sekolah Tinggi Agama Islam Negeri) menjadi IAIN (Institut Agama Islam Negeri) tahun 2015 lalu,
+                              Tim liputan Suska News (Donny, Azmi, PTIPD)
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="clear"></div>
+              </article>
+
+              <aside >
+                  <h1 style="font-size:26px;color:black;
+                  font-weight:lighter">Berita Lainya.</h1>
+                  <div class="prevArticle">
+                    <img src="images/Otik.jpg" alt="berita UIN" class="imgBerita" />
+                    <h1><a href="#">otik otak</a></h1>
+                    <p>
+                      Lorem ipsum Lorem ipsumdolor infficia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                  <div class="prevArticle">
+                    <img src="images/lagi.jpg" alt="berita UIN" class="imgBerita" />
+                    <h1><a href="#">otik otak</a></h1>
+                    <p>
+                      Lorem ipsum dolor sit amin culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+              </aside>
+
+            <div class="clear"></div>
+
+          </section>
+
+      </section>
+
+      <section id="map">
+
+        <section class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3989.6877722124873!2d101.35465571416849!3d0.4634976996618425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1480479014252" width="48%" height="230" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <div class="quote">
+              <h1>Universitas Digital Creative Indonesia</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectlpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodpteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <div class="qbtn">
+                <a href="#">Lihat Selengkapnya</a>
+              </div>
+            </div>
+        </section>
+
+      </section>
+
+      <section id="konten">
+
+        <section class="container">
+          <h1>Konten Video dan Audio Universitas</h1>
+
+          <div class="kol3">
+              <img src="images/book.jpg" alt="education book" style="width:100%;height:80%" title="image audio"/>
+              <audio controls>
+                <source src="Ed_Sheeran_Thinking_Out_Loud.mp3">
+              </audio>
+          </div>
+          <div class="kol3">
+            <video controls>
+              <source src="2 selection.mp4">
+            </video>
+          </div>
+          <div class="kol3">
+            <video controls>
+              <source src="1 cara menghubungkan file.mp4">
+            </video>
+          </div>
+          <div class="kol3">
+              <img src="images/lagi.jpg" alt="education book" style="width:100%;height:80%" title="image audio"/>
+              <audio controls>
+                <source src="Ed_Sheeran_Thinking_Out_Loud.mp3">
+              </audio>
+          </div>
+          <div class="kol3">
+            <video controls>
+              <source src="2 selection.mp4">
+            </video>
+          </div>
+          <div class="kol3">
+              <img src="images/angular.PNG" alt="education book" style="width:100%;height:80%" title="image audio"/>
+              <audio controls>
+                <source src="Ed_Sheeran_Thinking_Out_Loud.mp3">
+              </audio>
+          </div>
+
+
+          <div class="clear"></div>
+
+        </section>
+
+      </section>
+
+      <section id="bTamu">
+
+        <section class="container">
+
+            <section id="wrapper">
+
+                 <section class="panel">
+
+                      <section class="pnlHead">
+                           <h1>
+                                Lengkapi Catatan Kunjungan Anda
+                           </h1>
+                      </section>
+
+                      <section class="pnlBody">
+
+                           <form class="form"  method="post" action="sukses.html">
+
+                                <input type="text" name="nama" value="" placeholder="nama.." style="width:45%" required>
+                                <input type="text" name="website" value="" placeholder="website.." style="width:45%;float:right" required>
+                                <input type="email" name="email" value="" placeholder="email.." style="width:45%" required>
+                                <input type="text" name="noHp" value="" placeholder="no Hp.." style="width:45%;float:right" required>
+                                <input type="text" name="addres" value="" placeholder="alamat.." required>
+
+                                <div class="gender bxForm">
+                                    <textarea name="komentar" rows="8" cols="40" placeholder="komentar.."></textarea>
+                                </div>
+
+                                <!-- <div class="gender bxForm">
+                                   <label for="gender">Jenis Kelamin : </label>
+                                   <input type="radio" name="gender" value=""><span style="color:#ee6e73;">Pria</span>
+                                   <input type="radio" name="gender" value=""><span style="color:#ee6e73;">Wanita</span>
+                                </div>
+
+                                <div class="state bxForm">
+                                    <label for="status">Status : </label>
+                                    <select name="status" style="width:30%" >
+                                        <option value="Kawin">Kawin</option>
+                                        <option value="Belum">Belum Kawin</option>
+                                    </select>
+                                </div>
+
+                                <div class="religion bxForm">
+                                    <label for="status">Agama : </label>
+                                    <select name="status" style="width:30%" >
+                                        <option value="islam">Islam</option>
+                                        <option value="kristen">Kristen</option>
+                                        <option value="hindu">Hindu</option>
+                                        <option value="budha">Budha</option>
+                                        <option value="konghucu">Konghucu</option>
+                                    </select>
+                                </div>
+
+                                <div class="bxForm ttl">
+                                   <label for="ttl">tanggal lahir : </label>
+                                   <input type="date" name="ttl" value="" style="width:45%">
+                                </div> -->
+
+                                <input type="submit" name="name" value="daftar">
+
+                           </form>
+
+                      </section>
+
+                 </section>
+
+            </section>
+
+        </section>
+
+      </section>
+
+      <footer>
+        <h4> Akun yang dapat dihubungi </h4>
+        <br>
+        	<ul>
+            <li> 
+               <a href="https://facebook.com/dhyan" title="Facebook-Logo">
+                  <img src="images/logofb.png" width="50px">Facebook -Dian Wulandari Rusman</li>
+            <li> 
+               <a href="https://instagram.com/dianwulandari97 title="Instagram-Logo">
+                  <img src="images/instagram.png" width="50px">Instagram-@dianwulandari97</li>
+            <li> 
+               <a href="https://twitter.com/dian_wulandr" title="twitter-Logo">
+                  <img src="images/logotwitter.jpg" width="50px">Twitter-@dian_wulandr</li>       
+            </ul>
+
+
+           <div>
+             <p>Copyright &copy 2019 : Dian Wulandari Rusman</p>
+          </div>
+
+          <!-- WhatsHelp.io widget -->
+          <script type="text/javascript">
+              (function () {
+                  var options = {
+                      whatsapp: "+6285264794660", // WhatsApp number
+                      call_to_action: "Message us", // Call to action
+                      position: "right", // Position may be 'right' or 'left'
+                  };
+                  var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+                  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                  s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                  var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+              })();
+          </script>
+          <!-- /WhatsHelp.io widget -->
+
+      </footer>
+
    </body>
-</html> 
+</html>
